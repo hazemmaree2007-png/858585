@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات نقل السيارات والسطحة في الإمارات | 0566003625</title>
+    <!-- استيراد خط عربي جميل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- مكتبة أيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* شريط الاتصال السريع العلوي */
+        .top-bar {
+            background-color: #111;
+            color: #fff;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            border-bottom: 3px solid #ffc107;
+        }
+
+        .top-bar span {
+            font-weight: 700;
+        }
+
+        .top-bar a.phone-number {
+            color: #ffc107;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 900;
+        }
+
+        /* الهيدر الرئيسي */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px 80px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            font-weight: 900;
+        }
+
+        header h1 span {
+            color: #ffc107;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* أزرار التواصل البارزة في المقدمة */
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: #fff;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #20ba5a;
+            transform: translateY(-3px);
+        }
+
+        .btn-call {
+            background-color: #ffc107;
+            color: #111;
+        }
+
+        .btn-call:hover {
+            background-color: #e0a800;
+            transform: translateY(-3px);
+        }
+
+        /* قسم المميزات */
+        .features {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid #ffc107;
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            color: #ffc107;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.95rem;
+        }
+
+        footer p span {
+            color: #ffc107;
+            font-weight: 700;
+        }
+
+        /* زر واتساب عائم يرافق المستخدم طوال التصفح */
+        .float-whatsapp {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            background-color: #25d366;
+            color: #fff;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: all 0.3s;
+        }
+
+        .float-whatsapp:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الشريط العلوي البارز لرقم الهاتف -->
+    <div class="top-bar">
+        <span><i class="fa-solid fa-truck-fast"></i> خدمة نقل سيارات سريعة وآمنة 24/7 في جميع إمارات الدولة:</span>
+        <a href="tel:0566003625" class="phone-number">0566003625</a>
+    </div>
+
+    <!-- الهيدر الرئيسي مع أزرار التواصل المباشر -->
+    <header>
+        <h1>نقل وسحب السيارات في <span>الإمارات</span></h1>
+        <p>سطحة وريكفري مجهزة بالكامل لنقل جميع أنواع السيارات المعطلة والجديدة بحرية وأمان تام بين دبي، الشارقة، عجمان وباقي الإمارات.</p>
+        
+        <div class="cta-buttons">
+            <a href="https://wa.me/971566003625" class="btn btn-whatsapp" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب
+            </a>
+            <a href="tel:0566003625" class="btn btn-call">
+                <i class="fa-solid fa-phone"></i> اتصال مباشر الآن
+            </a>
+        </div>
+    </header>
+
+    <!-- قسم الخدمات والمميزات -->
+    <section class="features">
+        <div class="feature-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>خدمة على مدار الساعة</h3>
+            <p>مستعدون لتلبية طلباتكم طوال أيام الأسبوع 24 ساعة في اليوم لمواجهة حالات الطوارئ.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>نقل آمن ومضمون</h3>
+            <p>نحرص على تثبيت ونقل سيارتك بكل عناية واحترافية عالية لضمان عدم تعرضها لأي خدوش.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>استجابة سريعة</h3>
+            <p>نصل إليك في أسرع وقت ممكن فور تلقي الاتصال أو رسالة الواتساب الخاصة بك.</p>
+        </div>
+    </section>
+
+    <!-- زر واتساب عائم -->
+    <a href="https://wa.me/971566003625" class="float-whatsapp" target="_blank" title="تواصل عبر الواتساب">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 | خدمات نقل السيارات في الإمارات | للاستفسار السريع: <span>0566003625</span></p>
+    </footer>
+
+</body>
+</html>
